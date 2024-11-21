@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Portal Transportadoras Granvita</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="./codebase/grid.js"></script>
+        <script src="./ApiSankhya.mjs"></script>
+        <link rel="stylesheet" href="./codebase/grid.css">
+        <link rel="stylesheet" href="./dhx.css">
+        <link rel="stylesheet" href="./margemGrid.css">
+
+
+</head>
+<body>
+
+    <div class="box">
+        <div  class="row content"  id="grid">
+            <!--A Grid vai ser desenhada aqui-->
+        </div>
+    </div>
+
+    <script >
+             dados = consultaPendencias(22102);
+
+            let grid = new dhx.Grid("grid", {
+                        columns: [			
+                            {
+                                id: "NUMNOTA",
+                                width: 122,
+                                header: [{ text: "Nro Nota" }]
+                            },
+                            ] ,
+					  data: dados
+					 });
+
+
+
+    </script>
+
+
+
+</body>
+</html>
+
