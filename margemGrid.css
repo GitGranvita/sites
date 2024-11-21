@@ -1,0 +1,55 @@
+.dhx_sample-container {
+  height: 600px;
+}
+
+.container {
+  height: 600px;
+}
+
+.espacoCompleto {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.fundoVermelho {
+	background: #B00020; /*#f44336;*/
+	color: #FFF;
+}
+
+.vermelho{
+  color: #FF0000;
+}
+
+.fundoVerde{
+	background: #4CAF50;
+	color: #FFF;
+}
+
+.verde{
+  color: #006400;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.box .row.header {
+  flex: 0 1 auto;
+  height: 100%;
+  /* The above is shorthand for:
+  flex-grow: 0,
+  flex-shrink: 1,
+  flex-basis: auto
+  */
+}
+
+.box .row.content {
+  flex: 1 1 auto;
+}
